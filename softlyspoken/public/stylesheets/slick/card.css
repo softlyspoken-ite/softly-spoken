@@ -1,0 +1,28 @@
+ .card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+.card {
+  margin-top: 10px;
+  font-size: 2vh;
+  padding:  10px; ;
+  transition: 0.5s ease;
+  
+}
+.card img{
+  cursor: pointer;
+  
+}
+@media screen and (min-width: 600px) {
+  .card  {
+  
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card  {
+    display: none;
+  }
+} 
+
