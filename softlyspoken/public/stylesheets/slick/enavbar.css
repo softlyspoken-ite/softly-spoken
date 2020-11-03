@@ -26,9 +26,10 @@
 	padding-right: 50px;
 	font-family: 'Merienda One', sans-serif;
 }
-.navbar .navbar-brand i {
+.navbar .navbar-brand .navbar-icon {
 	font-size: 36px;
 	margin-right: 5px;
+	background-image: url("http://localhost:3000/resources/logo_w-name.png");
 }
 .search-box {
 	position: relative;
@@ -63,17 +64,22 @@
 	background: none !important;
 }
 .navbar .dropdown-menu {
+	background-color: #000000;
 	border-radius: 1px;
-	border-color: #e5e5e5;
-	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+	border-color: #000000;
+	box-shadow: 0 2px 8px rgba(82, 82, 82, 0.05);
+	width: 200px;
+	font-family: Coolvetica;
+	font-size: medium;
+	color: #fff;
 }
 .navbar .dropdown-menu a {
-	color: #777;
+	color: #fff;
 	padding: 8px 20px;
 	line-height: normal;
 }
 .navbar .dropdown-menu a:hover, .navbar .dropdown-menu a:active {
-	color: #333;
+	color: #fff;
 }	
 .navbar .dropdown-item .material-icons {
 	font-size: 21px;
@@ -96,6 +102,7 @@
 	position: relative;
 	margin-right: 10px;
 }
+
 .navbar a.messages {
 	margin-right: 20px;
 }
@@ -108,10 +115,10 @@
 .navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
 	background: transparent !important;
 }
-@media (min-width: 1200px){
+@media (min-width: 472px){
 	.form-inline .input-group {
-		width: 300px;
-		margin-left: 30px;
+		width: 472px;
+		margin: 0 25px;
 	}
 }
 @media (max-width: 1199px){

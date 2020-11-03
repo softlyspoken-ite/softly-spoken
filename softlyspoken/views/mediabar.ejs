@@ -1,0 +1,62 @@
+<!-- <div class="player">
+    <div class="details">
+      <div class="now-playing">PLAYING x OF y</div>
+      <div class="track-art"></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+      <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+      <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+    </div>
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div> -->
+<div class="music-player">
+  <div class="progress-wrapper">
+    <div class="current-song">Current</div>
+    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+    <div style="display: inline-flex;">
+      <div class="start-time">0:00</div>
+      <div class="end-time">0:00</div>
+    </div>
+  </div>
+  <div class="player-actions" style="margin-left: 80px;">
+    <button class="prev-button" onclick="backward10sec()">
+      <img src="http://localhost:3000/resources/backward.png" style="width: 30px;height: 30px;margin-top: -10px;">
+    </button>
+    <button class="play-button" onclick="playpauseTrack()">
+      <img src="http://localhost:3000/resources/play.png"
+        style="width: 28px;height: 33px;border-radius: 0%;margin-top: -5px;">
+    </button>
+    <button class="next-button" onclick="forward10sec()">
+      <img src="http://localhost:3000/resources/forward.png" style="width: 30px;height: 30px;margin-top: -10px;">
+    </button>
+    <a href="#" class="track-art"></a>
+    <div class="volume">
+      <div class="volume-btn" onclick="show()">
+        <button></button>
+      </div>
+      <div class="volume-controls">
+        <input type="range" orient="vertical" min="1" max="100" value="100" class="volume_slider"
+          onchange="setVolume()">
+      </div>
+    </div>
+    <a href="#" class="profile">
+      <img src="http://localhost:3000/resources/profile.png" class="profileimg">
+      <a href="#" class="profilename track-artist">Untitle Case</a>
+    </a>
+    <a hef="#" class="saved">
+    </a>
+  </div>
+</div>
+</div>
