@@ -8,7 +8,7 @@ let next_btn = document.querySelector(".next-button");
 let prev_btn = document.querySelector(".prev-button");
 
 let seek_slider = document.querySelector(".seek_slider");
-let volume_slider = document.querySelector(".volume_slider"); 
+let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".start-time");
 let total_duration = document.querySelector(".end-time");
 
@@ -74,13 +74,13 @@ function playpauseTrack() {
 function playTrack() {
   curr_track.play();
   isPlaying = true;
-  // playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+  playpause_btn.innerHTML = '<img src="http://localhost:3000/resources/pause.png" style = "width: 22px;height: 31px;border-radius: 0%;margin-left: 0px;margin-top: 0px;" > ';
 }
 
 function pauseTrack() {
   curr_track.pause();
   isPlaying = false;
-  // playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';;
+  playpause_btn.innerHTML = '<img src="http://localhost:3000/resources/play.png" style = "width: 28px;height: 33px;border-radius: 0%;margin-left: 5px;margin-top: 5px;" > ';
 }
 
 function forward10sec() {
@@ -91,11 +91,11 @@ function backward10sec() {
   curr_track.currentTime -= 10;
 }
 
-function setVolume() { 
+function setVolume() {
   // Set the volume according to the 
   // percentage of the volume slider set 
-  curr_track.volume = volume_slider.value / 100; 
-} 
+  curr_track.volume = volume_slider.value / 100;
+}
 
 function seekTo() {
   seekto = curr_track.duration * (seek_slider.value / 100);

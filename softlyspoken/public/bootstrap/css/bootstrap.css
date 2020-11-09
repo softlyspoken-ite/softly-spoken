@@ -4221,6 +4221,9 @@ input[type="button"].btn-block {
 .nav {
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0;

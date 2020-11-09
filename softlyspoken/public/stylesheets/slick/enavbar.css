@@ -35,9 +35,10 @@
 	position: relative;
 }	
 .search-box input {
+	margin-left: 70px;
 	box-shadow: none;
 	padding-right: 35px;
-	border-radius: 3px !important;
+	border-radius: 11px !important;
 }
 .search-box .input-group-addon {
 	min-width: 35px;
