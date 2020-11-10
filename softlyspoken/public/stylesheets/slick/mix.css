@@ -1,0 +1,29 @@
+.myButton {
+    background-color: #000000;
+    border-radius: 60px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: Coolvetica;
+    font-size: 20px;
+    padding: 7px 40px;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.textarea {
+    outline: none;
+    resize: none;
+    overflow: auto;
+    font-family: Coolvetica;
+    font-size: 30px;
+    color: #000000;
+}
