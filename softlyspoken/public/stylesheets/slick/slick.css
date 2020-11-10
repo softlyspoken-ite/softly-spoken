@@ -242,7 +242,7 @@ input[type=password] {
     body {
         background-image: none;
     }
-    .container {
+}   .container {
         margin-top: 0px;
     }
 }
