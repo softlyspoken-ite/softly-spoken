@@ -27,3 +27,12 @@
     font-size: 30px;
     color: #000000;
 }
+
+.respon {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
