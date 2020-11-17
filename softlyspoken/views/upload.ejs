@@ -1,0 +1,45 @@
+<div class="signupSection" id="uploadSection">
+    <label id="closeButton" for="show" class="close-btn fas fa-times" title="close"></label>
+    <div class="info">
+        <h2>Record Now</h2>
+        <img src="http://localhost:3000/resources/microphone.png" alt="" style="width: 200px;height: 200px;margin-top: 100px;"/>
+        <div class="uploadfile" style="margin-top: 100px;">
+            <span> or upload file</span>
+            <button class="choosefile">choose file</button>
+        </div>
+    </div>
+    <form action="#" method="POST" class="titleForm" name="titleform" style="float:right;">
+        <ul class="noBullet" style="margin-top: 100px;">
+            <li>
+                <label for="tile"></label>
+                <input type="text" class="inputTitle" id="title" name="title" placeholder="title*" value="" required />
+            </li>
+            <li>
+                <label for="description"></label>
+                <textarea name="description" class="description" id="description" cols="30" rows="10"
+                    placeholder="description*" required></textarea>
+            </li>
+
+            <div class="imgToUpload">
+                <div>
+                    Upload thumbnail
+                    <img class="imgupload"
+                        src="http://localhost:3000/resources/kisspng-computer-icons-photography-img-landscape-photo-photography-picture-icon-5ab054ddbd13a7.3403789515215055017745.png"
+                        alt="" /> click here to upload
+                </div>
+
+                <label for="choose your tag">Choose your tag:</label>
+                <select name="choose your tag" id="choosetag" class="choosetag">
+                    <option value="study">STUDY</option>
+                    <option value="love">LOVE</option>
+                    <option value="entertainment">ENTERTAINMENT</option>
+                    <option value="health">HEALTH</option>
+                </select>
+
+            </div>
+            <li id="center-btn">
+                <input type="submit" id="publish" name="publish" alt="publish" value="publish" />
+            </li>
+        </ul>
+    </form>
+</div>
