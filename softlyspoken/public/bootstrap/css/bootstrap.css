@@ -3413,7 +3413,7 @@ input[type="button"].btn-block {
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 1;
     z-index: 1000;
     display: none;
     float: left;
@@ -3421,13 +3421,17 @@ input[type="button"].btn-block {
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
     font-size: 1rem;
-    color: #212529;
+    color: #fff;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+	background-color: #000000;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
+    border-radius: 1px;
+    font-family: Coolvetica;
+    font-size: medium;
+    box-shadow: 0 2px 8px rgba(82, 82, 82, 0.05);
+    width: 200px;
 }
 
 .dropdown-menu-left {
@@ -3591,7 +3595,7 @@ input[type="button"].btn-block {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: #fff;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
