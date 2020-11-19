@@ -4,12 +4,20 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
-var profile = require('./routes/profile');
-var login = require('./routes/login');
+var index = require('./routes/frontend/index');
+var users = require('./routes/frontend/users');
+var profile = require('./routes/frontend/profile');
+var login = require('./routes/frontend/login');
+var seemore = require('./routes/frontend/seemore');
+var signup = require('./routes/frontend/signup');
+var edit = require('./routes/frontend/edit');
+var change = require('./routes/frontend/changepassword');
+
+var db = require('./routes/backend/user');
 
 var app = express();
+// app.use(bodyParser.urlencoded({ extended: true }));
+// const bodyParser = require('body-parser')
 
 // view engine setup
 app.set('views', path.join(__dirname, '/views'));
@@ -27,6 +35,12 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/profile', profile);
 app.use('/login', login);
+app.use('/seemore', seemore);
+app.use('/signup', signup);
+app.use('/editprofile', edit);
+app.use('/changepassword', change);
+
+app.use(db);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

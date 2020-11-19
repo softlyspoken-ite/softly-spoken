@@ -39,58 +39,77 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/slick/slider.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/slick/mix.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/slick/style.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/upload/upload.css" />
 </head>
 
 <body>
-    <% include partials/guestnavbar %>
-        <% include partials/mediabar %>
-            <div class="container-md" style="background-color:#DFDFDF; border-radius: 20px; width: 3000px; height: 300px; margin-top: 5%;">
+    <% include partials/membernavbar %>
+    <div class="container-md"
+        style="background-color:#DFDFDF; border-radius: 20px; width: 3000px; height: 300px; margin-top: 5%;">
 
-                <div class="row">
-                    <div class="col-md-3" style="  height: 300px; border-right: 3px solid rgb(70, 70, 70);">
-                        <div class="container-fluid" style="margin-top: 2rem; width: 250px; height: 250;">
-                            <a href="xxxxx">
-                                <img src="http://localhost:3000/resources/track_art.png" class="respon">
-                            </a>
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-md-9">
-                        <div class="row" style=" height: 25%; border-bottom: 3px solid rgb(70, 70, 70);">
-                            <p style=" font-family:Coolvetica; font-size:1.75vw; width:750px; margin-top:15px; margin-left:20px; color:#686868;">Username</p>
-                            <a href="xxxxx">
-                                <img src="http://localhost:3000/resources/gear.png" style="margin-top:20px; margin-left: 30px; width: 35px; height: 35px; ">
-                            </a>
-                        </div>
-
-                        <div class="row" style=" height: 55%; ">
-                            <p style="font-family:Coolvetica; font-size:1.25vw; line-height:30px;width:750px; margin-top:10px; margin-left:20px; color:#686868;">Email</p>
-                            <p style="font-family:Coolvetica; font-size:1.25vw; line-height:30px;width:750px; margin-top:-10px; margin-left:20px; color:#686868;">Website</p>
-                            <p style="font-family:Coolvetica; font-size:1.25vw;line-height:30px;height: 70px; width:750px; margin-top:-10px; margin-left:20px; color:#686868; ">
-                                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-                            </p>
-
-
-                        </div>
-
-
-                        <div class=" row ">
-                            <div class="col " style="width:300px; height: 60px; border-top: 3px solid rgb(70, 70, 70);  ">
-                                <p style="font-family:Coolvetica; font-size:1.25vw; line-height:29px; color:#686868;margin-left:30%;margin-top: 5%;">Softly flowers <img src="http://localhost:3000/resources/logo_color.png" style="width: 30px; height: 30px;"></p>
-                            </div>
-                            <div class="col " style="width:300px; height:60px; border-left: 3px solid rgb(70, 70, 70);border-right: 3px solid rgb(70, 70, 70);border-top: 3px solid rgb(70, 70, 70); ">
-                                <p style="font-family:Coolvetica; font-size:1.25vw; line-height:29px; color:#686868;margin-left:40%;margin-top: 5%;">Following <img src="http://localhost:3000/resources/icon_following.png" style="width: 30px; height: 30px;"></p>
-                            </div>
-                            <div class="col " style="width:300px; height: 60px; border-top: 3px solid rgb(70, 70, 70); border-bottom-right-radius: 20px; ">
-                                <p style="font-family:Coolvetica; font-size:1.25vw; line-height:29px; color:#686868;margin-left:40%;margin-top: 5%;">follower <img src="http://localhost:3000/resources/icon_follower.png" style="width: 30px; height: 30px;"></p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-md-3" style="  height: 300px; border-right: 3px solid rgb(70, 70, 70);">
+                <div class="container-fluid" style="margin-top: 2rem; width: 250px; height: 250;">
+                    <a href="xxxxx">
+                        <img src="http://localhost:3000/resources/track_art.png" class="respon">
+                    </a>
                 </div>
 
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="row" style=" height: 25%; border-bottom: 3px solid rgb(70, 70, 70);">
+                    <p
+                        style=" font-family:Coolvetica; font-size:1.75vw; width:750px; margin-top:15px; margin-left:20px; color:#686868;">
+                        Username</p>
+                    <a href="/editprofile">
+                        <img src="http://localhost:3000/resources/gear.png"
+                            style="margin-top:20px; margin-left: 30px; width: 35px; height: 35px; ">
+                    </a>
+                </div>
+
+                <div class="row" style=" height: 55%; ">
+                    <p
+                        style="font-family:Coolvetica; font-size:1.25vw; line-height:30px;width:750px; margin-top:10px; margin-left:20px; color:#686868;">
+                        Email</p>
+                    <p
+                        style="font-family:Coolvetica; font-size:1.25vw; line-height:30px;width:750px; margin-top:-10px; margin-left:20px; color:#686868;">
+                        Website</p>
+                    <p
+                        style="font-family:Coolvetica; font-size:1.25vw;line-height:30px;height: 70px; width:750px; margin-top:-10px; margin-left:20px; color:#686868; ">
+                        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    </p>
+
+
+                </div>
+
+
+                <div class=" row ">
+                    <div class="col " style="width:300px; height: 60px; border-top: 3px solid rgb(70, 70, 70);  ">
+                        <p
+                            style="font-family:Coolvetica; font-size:1.25vw; line-height:29px; color:#686868;margin-left:30%;margin-top: 5%;">
+                            Softly flowers <img src="http://localhost:3000/resources/logo_color.png"
+                                style="width: 30px; height: 30px;"></p>
+                    </div>
+                    <div class="col "
+                        style="width:300px; height:60px; border-left: 3px solid rgb(70, 70, 70);border-right: 3px solid rgb(70, 70, 70);border-top: 3px solid rgb(70, 70, 70); ">
+                        <p
+                            style="font-family:Coolvetica; font-size:1.25vw; line-height:29px; color:#686868;margin-left:40%;margin-top: 5%;">
+                            Following <img src="http://localhost:3000/resources/icon_following.png"
+                                style="width: 30px; height: 30px;"></p>
+                    </div>
+                    <div class="col "
+                        style="width:300px; height: 60px; border-top: 3px solid rgb(70, 70, 70); border-bottom-right-radius: 20px; ">
+                        <p
+                            style="font-family:Coolvetica; font-size:1.25vw; line-height:29px; color:#686868;margin-left:40%;margin-top: 5%;">
+                            follower <img src="http://localhost:3000/resources/icon_follower.png"
+                                style="width: 30px; height: 30px;"></p>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
     <% include partials/upload %>
     <% include partials/mediabar %>
