@@ -7,11 +7,13 @@
     font-size: 20px;
     padding: 7px 40px;
     text-decoration: none;
+    margin-left: 1vw;
 }
 
 .myButton:hover {
     background-color: #000000;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .myButton:active {
@@ -35,4 +37,70 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+}
+
+.headertext {
+    font-family: Coolvetica;
+    font-size: 30px;
+    color: #FCD200;
+}
+
+.footerarea {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #FCD200;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+
+/* 
+Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .headertext {
+        font-size: 20px;
+    }
+    .myButton {
+        font-size: 15px;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .headertext {
+        font-size: 25px;
+    }
+    .myButton {
+        font-size: 15px;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .headertext {
+        font-size: 25px;
+    }
+    .myButton {
+        font-size: 15px;
+    }
+}
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .headertext {
+        font-size: 30px;
+    }
 }
