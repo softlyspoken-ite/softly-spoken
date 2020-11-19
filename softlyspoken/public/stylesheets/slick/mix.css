@@ -4,8 +4,8 @@
     display: inline-block;
     color: #ffffff;
     font-family: Coolvetica;
-    font-size: 20px;
-    padding: 7px 40px;
+    font-size: 4vw;
+    padding: 7px 20px;
     text-decoration: none;
     margin-left: 1vw;
 }
@@ -50,57 +50,65 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 45px;
     background-color: #FCD200;
     text-align: center;
     margin-top: 5vw;
 }
 
+.artworkarea {
+    background-image: url("http://localhost:3000/resources/test2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-width: 100%;
+    height: 600px;
+}
 
-/* 
-Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap
 
-Small devices (landscape phones, 576px and up) */
+/* Default styles first then media queries */
 
-@media (min-width: 576px) {
+@media screen and (min-width: 400px) {
     .headertext {
         font-size: 20px;
     }
     .myButton {
         font-size: 15px;
     }
+    .artworkarea {
+        height: 150px;
+    }
+    .headertext {
+        margin-top: 2rem;
+    }
 }
 
-
-/* // Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .headertext {
-        font-size: 25px;
+        font-size: 20px;
     }
     .myButton {
         font-size: 15px;
     }
+    .artworkarea {
+        height: 500px;
+    }
 }
 
-
-/* // Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
+@media screen and (min-width: 1000px) {
     .headertext {
-        font-size: 25px;
+        font-size: 20px;
     }
     .myButton {
         font-size: 15px;
     }
+    .artworkarea {
+        height: 500px;
+    }
 }
 
-
-/* // Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .headertext {
-        font-size: 30px;
+        font-size: 25px;
     }
 }

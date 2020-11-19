@@ -95,10 +95,6 @@ a.site-logo {
 
 /*pic login */
 
-.pic-login-2 {
-    height: 75vh;
-}
-
 
 /*login form*/
 
@@ -166,21 +162,15 @@ input[type=password] {
 }
 
 
-/**************************** media query 1024px **********************/
+/* Default styles first then media queries */
 
-@media only screen and (max-width: 1024px) {
-    .pic-login-2 {
-        height: auto;
-    }
-    .login-form {
-        font-size: xx-large;
+@media screen and (min-width: 400px) {
+    .container {
+        margin-top: 0px;
     }
 }
 
-
-/**************************** media query 736px **************/
-
-@media only screen and (max-width: 736px) {
+@media screen and (min-width: 600px) {
     .pic-login-2 {
         display: none;
     }
@@ -194,17 +184,20 @@ input[type=password] {
     }
 }
 
-
-/***************************** media query 414px **********/
-
-
-/* mobile breakpoint start */
-
-@media screen and (max-width: 414px) {
-    body {
-        background-image: none;
+@media screen and (min-width: 1000px) {
+    .pic-login-2 {
+        height: auto;
     }
-    .container {
-        margin-top: 0px;
+    .login-form {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .pic-login-2 {
+        height: auto;
+    }
+    .login-form {
+        font-size: xx-large;
     }
 }
