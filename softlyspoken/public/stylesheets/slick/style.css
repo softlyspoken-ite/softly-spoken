@@ -201,3 +201,13 @@ input[type=password] {
         font-size: xx-large;
     }
 }
+
+@media screen and (min-width: 1800px) {
+    .pic-login-2 {
+        height: auto;
+    }
+    .login-form {
+        font-size: xx-large;
+        height: 100px;
+    }
+}

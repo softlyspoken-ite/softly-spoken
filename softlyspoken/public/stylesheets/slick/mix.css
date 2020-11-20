@@ -8,6 +8,7 @@
     padding: 7px 20px;
     text-decoration: none;
     margin-left: 1vw;
+    justify-content: flex-end;
 }
 
 .myButton:hover {
@@ -54,6 +55,7 @@
     background-color: #FCD200;
     text-align: center;
     margin-top: 5vw;
+    z-index: 2;
 }
 
 .artworkarea {
@@ -65,10 +67,33 @@
     height: 600px;
 }
 
+.responlogin {
+    height: auto;
+}
+
+.spacearea {
+    height: auto;
+}
+
 
 /* Default styles first then media queries */
 
 @media screen and (min-width: 400px) {
+    .headertext {
+        font-size: 20px;
+    }
+    .myButton {
+        font-size: 15px;
+    }
+    .artworkarea {
+        height: 150px;
+    }
+    .headertext {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-hight: 400px) {
     .headertext {
         font-size: 20px;
     }
@@ -97,7 +122,7 @@
 
 @media screen and (min-width: 1000px) {
     .headertext {
-        font-size: 20px;
+        font-size: 17px;
     }
     .myButton {
         font-size: 15px;
@@ -109,6 +134,30 @@
 
 @media screen and (min-width: 1200px) {
     .headertext {
+        font-size: 23px;
+    }
+    .myButton {
+        font-size: 15px;
+    }
+    .artworkarea {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .headertext {
         font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .headertext {
+        font-size: 35px;
+    }
+    .spacearea {
+        height: 100px;
+    }
+    .myButton {
+        font-size: 20px;
     }
 }
