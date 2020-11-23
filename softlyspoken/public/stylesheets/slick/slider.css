@@ -1,12 +1,13 @@
-html, body {
+html,
+body {
     font-family: 'Sriracha', cursive;
     margin: 0;
     padding: 0;
-    background-color: #80B4C1;
+    background-color: red;
     overflow-x: hidden;
     overflow-y: scroll;
     -ms-overflow-style: none;
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
@@ -18,7 +19,8 @@ body::-webkit-scrollbar {
 }
 
 .slider {
-    width: 80%;
+    width: 90%;
+    height: 230px !important;
     margin: 50px auto;
 }
 
@@ -30,7 +32,8 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
     color: black;
 }
 
@@ -46,5 +49,3 @@ body::-webkit-scrollbar {
 .slick-current {
     opacity: 1;
 }
-
-</style>

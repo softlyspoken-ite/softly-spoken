@@ -1,0 +1,56 @@
+<nav>
+    <div class="nav-content">
+        <a href="" class="logo">
+            <img src="http://localhost:3000/resources/logo_w-name.png" style="max-width: 160px; height: 40px; ">
+        </a>
+
+        <div class="nav-icon">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
+        </div>
+
+        <div class="nav-links-nologin">
+            <a href="#" style="width: 50px;">Home</a>
+
+            <a href="#" style="width: 50px;">Saved</a>
+
+
+            <form class="navbar-form form-inline">
+                <span class="input-group search-box" style="justify-content: center; margin-top: -3px; margin-left: 0;margin-right: 0;">
+                    <input type="text" id="search" class="form-control" placeholder="Search ">
+                    <span class="input-group-addon"></span>
+                </span>
+            </form>
+
+
+            <a href="#" style="width: max-content;">upload </a>
+
+        </div>
+        <div class="nav-item dropdown user-icon">
+            <a data-toggle="dropdown" class="nav-link dropdown-toggle user-action nav-item active" style="cursor: pointer;"><img src="https://anothersideofstory99.files.wordpress.com/2012/09/mahatma.png" class="user-icon" alt="Avatar" style="margin: 1px 2px 2px 2px;"> Username </a>
+            <div class="dropdown-menu">
+                <a href="/profile" class="dropdown-item" style="cursor: pointer;"><i class="fa fa-user-o"></i> Profile</a></a>
+                <div class="dropdown-divider">
+                </div><a class="dropdown-item" style="cursor: pointer;"><i class="fa fa-sliders"></i> Helps</a></a>
+                <a href="/" class="dropdown-item" style="cursor: pointer;"><i class="material-icons">&#xE8AC;</i> Signout</a></a>
+            </div>
+        </div>
+
+        <!-- <div class="user-icon user-pic" style="display: flex;">
+            <a style="color:#ffffff; max-width: fit-content;">username</a>
+        </div> -->
+
+
+    </div>
+
+
+</nav>
+
+<script>
+    const navIcon = document.querySelector(".nav-icon");
+    const nav = document.querySelector("nav");
+
+    navIcon.onclick = function() {
+        nav.classList.toggle('show');
+    }
+</script>
