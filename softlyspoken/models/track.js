@@ -6,15 +6,21 @@ const trackSchema = mongoose.Schema({
     description: {
         type: String
     },
-    musicID: {
-        type: String
+    trackID: {
+        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
     },
-    userMusic: {
-        type: String
-    }
+    userCreate: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    },
+    
 })
 
-const Track = new mongoose.model('Tusic',trackSchema)
+
+const Track = new mongoose.model('Music',trackSchema)
+
 
 
 

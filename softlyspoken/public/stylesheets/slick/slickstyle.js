@@ -34,8 +34,8 @@ $(document).on("ready", function () {
     $(".regular").slick({
         dots: true,
         infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: window.outerWidth/320,
+        slidesToScroll: window.outerWidth/320,
     });
     $(".center").slick({
         dots: true,

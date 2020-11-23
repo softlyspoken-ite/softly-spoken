@@ -10,7 +10,8 @@ const auth = require('../../middleware/auth')
 const router = new express.Router()
 const mongoose = require('mongoose');
 const Track = require('../../models/track');
-
+const User = require('../../models/user');
+// const list = require('../../middleware/list')
 /**
  * GET /tracks/:trackID
  */
@@ -21,7 +22,8 @@ router.get('/tracks/:trackID', (req, res) => {
   } catch(err) {
     return res.status(400).json({ message: "Invalid trackID in URL parameter. Must be a single String of 12 bytes or a string of 24 hex characters" }); 
   }
-  res.set('content-type', 'audio/mp4');
+
+  res.set('content-type', 'audio/ogg');
   res.set('accept-ranges', 'bytes');
 
   const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db, {
@@ -46,19 +48,19 @@ router.get('/tracks/:trackID', (req, res) => {
 /**
  * POST /tracks
  */
-router.post('/tracks',(req, res) => {
+router.post('/tracks',auth, async (req, res) => {
   const storage = multer.memoryStorage()
   const upload = multer({ storage: storage, limits: { fields: 1, fileSize: 90000000, files: 1, parts: 2 }});
-  upload.single('track',)(req, res, (err) => {
+  upload.single('track')(req, res, (err) => {
     if (err) {
       return res.status(400).json({ message: "Upload Request Validation Failed" });
     } else if(!req.body.name) {
       return res.status(400).json({ message: "No track name in request body" });
     }
-    
-    let trackName = req.body.name;
-    
-     /// Readable streams will store data in an internal buffer 
+
+    try {
+      let trackName = req.body.name;
+      /// Readable streams will store data in an internal buffer 
     // Covert buffer to Readable Stream
     const readableTrackStream = new Readable();
     readableTrackStream.push(req.file.buffer);        // Chunk of data to push into the read queue
@@ -70,21 +72,28 @@ router.post('/tracks',(req, res) => {
     });
 
     let uploadStream = bucket.openUploadStream(trackName);  // Returns a writable stream (GridFSBucketWriteStream) for writing buffers to GridFS
-    let id = uploadStream.id;        
-    readableTrackStream.pipe(uploadStream); //  stream.pipe() method is called on a readable stream, adding this writable to its set of destinations.
+    let id = uploadStream.id; 
     
-    // const musicdetail = new Track({
-    //     musicID: uploadStream.id,
-    //     userMusic: req.user._id
-    // })
-    // musicdetail.save();
+    const track = new Track({
+      ...req.body,
+      userCreate : req.user._id,
+      trackID : uploadStream.id,
+    })
+    track.save();
+    
+    readableTrackStream.pipe(uploadStream); //  stream.pipe() method is called on a readable stream, adding this writable to its set of destinations.
     uploadStream.on('error', () => {
       return res.status(500).json({ message: "Error uploading file" });
     });
 
     uploadStream.on('finish', () => {
-      return res.status(201).json({ message: "File uploaded successfully, stored under Mongo ObjectID: " + id });
+      return res.status(201).send(track)
     });
+    }
+    catch (e) {
+      throw new Error(e)
+    }
+
   });
 });
 
