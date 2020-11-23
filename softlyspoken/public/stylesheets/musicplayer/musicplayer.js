@@ -26,21 +26,11 @@ let track_list = [
     name: "SKYBOX",
     artist: "Gunna",
     image: "http://localhost:3000/resources/track_art.png",
-    path: "/music/Gunna_-_SKYBOX.mp3"
-  },
-  {
-    name: "That's A Rack",
-    artist: "Lil Uiz Vert",
-    image: "",
-    path: "/music/Lil Uzi Vert - That's A Rack.mp3"
-  },
-  {
-    name: "Highest In The Room",
-    artist: "Travis Scott",
-    image: "",
-    path: "/music/Travis Scott - Highest In The Room.mp3"
-  },
+    path: ""
+  }
 ];
+
+track_list[0].path = "http://localhost:3000/tracks/5fba89ca26765163901b0f23"
 
 function loadTrack(track_index) {
   clearInterval(updateTimer);

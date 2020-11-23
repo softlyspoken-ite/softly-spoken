@@ -111,11 +111,7 @@ nav {
     color: #ffffff;
 }
 
-.nav-content a:hover,
-.nav-icon:hover,
-.search-icon:hover,
-.user-icon:hover,
-.notification-icon:hover {
+.nav-content a:hover, .nav-icon:hover, .search-icon:hover, .user-icon:hover, .notification-icon:hover {
     opacity: 0.7;
 }
 
@@ -195,8 +191,7 @@ nav {
 }
 
 @media (max-width: 900px) {
-    .nav-links,
-    .nav-links-nologin {
+    .nav-links, .nav-links-nologin {
         position: fixed;
         top: 43px;
         right: 0;
@@ -260,6 +255,7 @@ nav {
     .notification-icon {
         order: 4;
     }
+    
 }
 
 .show .one {
@@ -308,8 +304,7 @@ nav {
     height: 30px;
 }
 
-#search-bar:hover,
-#search-bar:focus {
+#search-bar:hover, #search-bar:focus {
     outline: none;
     background-color: rgba(255, 255, 255);
     color: black;
@@ -318,7 +313,6 @@ nav {
 #search-bar:focus {
     padding-left: 30px;
 }
-
 
 /* Default styles first then media queries */
 

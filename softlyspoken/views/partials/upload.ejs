@@ -2,7 +2,14 @@
     <label id="closeButton" for="show" class="close-btn fas fa-times" title="close"></label>
     <div class="info">
         <h2>Record Now</h2>
-        <img src="http://localhost:3000/resources/microphone.png" alt="" style="width: 200px;height: 200px;margin-top: 100px;"/>
+        <div id="recordButton" >
+            <img src="http://localhost:3000/resources/microphone.png"
+                style="margin-left: 170px;width: 200px;height: 200px;margin-top: 100px;display: block;" />
+        </div>
+        <div id="pauseButton">
+            <img src="http://localhost:3000/resources/microphone.png"
+                style="margin-left: 170px;width: 200px;height: 200px;margin-top: 100px;display: none;" />
+        </div>
         <div class="uploadfile" style="margin-top: 100px;">
             <span> or upload file</span>
             <button class="choosefile">choose file</button>
