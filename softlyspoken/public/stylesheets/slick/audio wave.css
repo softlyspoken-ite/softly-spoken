@@ -1,86 +1,93 @@
-.soundWrapper{
-    margin: auto;
-    position: relative;
-    background-color: #DFDFDF;
-    border-radius: 20px;
-    width: 1000px;
+.control {
+    margin-top: 0px;
 }
-.control{
-    margin-left: 400px;
-    margin-top: 30px;
-}
-.pod-img{
-    width: 150px;
-    margin-top: 10px;
-    margin-left: 5px;
-    display: inline-block;
+
+.pod-img {
+    background-image: url("http://localhost:3000/resources/cryman.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: auto;
+    height: auto;
     cursor: pointer;
 }
-.audio-spectrum{
-    width: 780px;
+
+.audio-spectrum {
+    width: auto;
 }
-canvas{
-    width: 100%;
-    background: rgb(17,17,17);
-    background: linear-gradient(0deg, rgba(17,17,17,1) 0%, rgba(50,24,145,1) 100%);
-    border-radius: 20px 20px 0 0;
-    
-}
-.detail{
+
+
+/* canvas {
+    max-width: auto;
+    background: rgb(17, 17, 17);
+    background: linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(50, 24, 145, 1) 100%);
+} */
+
+.detail {
     width: 100%;
     display: inline-block;
 }
+
 .descripe-detail {
-    
     color: rgb(18, 18, 27);
     vertical-align: 50px;
     margin-left: 15px;
     display: inline-block;
 }
-.descripe-detail img{
+
+.descripe-detail img {
     margin-left: 6px;
     vertical-align: -2px;
 }
 
-.reactive-post{
+.reactive-post {
     display: flex;
     vertical-align: center;
     padding: 10px;
-    background-color:  #ECECEC;
-    margin-top: 20px;
-    border-radius:0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
 }
-.reactive-icon{
-    margin-left: 7px;
-    vertical-align: 15px;
+
+.reactive-icon {
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.like {
+    display: flex;
     cursor: pointer;
 }
-.like{
-    margin-left: 150px;
+
+.comment {
+    display: flex;
     cursor: pointer;
 }
-.comment{
-    margin-left: 200px;
-    
+
+.save {
+    display: flex;
     cursor: pointer;
 }
-.save{
-    margin-left: 200px;
-    
-    cursor: pointer;
-}
-.likes{
+
+.likes {
     width: 40px;
+    height: 40px;
 }
-.comments{
+
+.comments {
+    margin-top: 3px;
+    border-radius: 0;
     width: 40px;
+    height: 40px;
 }
-.saves{
+
+.saves {
+    margin-top: 2px;
     width: 40px;
+    height: 40px;
 }
+
 @media only screen and (max-width: 1004px) {
-    .soundWrapper{
+    .soundWrapper {
         width: 900px;
     }
-  }
-
+}

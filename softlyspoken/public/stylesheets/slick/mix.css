@@ -1,3 +1,9 @@
+.warpingyou {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .myButton {
     background-color: #000000;
     border-radius: 60px;
@@ -83,6 +89,30 @@
     height: auto;
 }
 
+p.test {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+
+#description {
+    height: fit-content;
+    width: 90%;
+    font-family: Coolvetica;
+    color: black;
+    /* background-color: #FCD200; */
+}
+
+.headerdetail {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 8px;
+}
+
 nav {
     margin: 0;
     overflow: hidden;
@@ -111,12 +141,16 @@ nav {
     color: #ffffff;
 }
 
-.nav-content a:hover, .nav-icon:hover, .search-icon:hover, .user-icon:hover, .notification-icon:hover {
+.nav-content a:hover,
+.nav-icon:hover,
+.search-icon:hover,
+.user-icon:hover,
+.notification-icon:hover {
     opacity: 0.7;
 }
 
 .nav-links-nologin {
-    width: 60%;
+    width: 75%;
     padding-left: auto;
     padding-right: auto;
     display: flex;
@@ -191,7 +225,8 @@ nav {
 }
 
 @media (max-width: 900px) {
-    .nav-links, .nav-links-nologin {
+    .nav-links,
+    .nav-links-nologin {
         position: fixed;
         top: 43px;
         right: 0;
@@ -255,7 +290,6 @@ nav {
     .notification-icon {
         order: 4;
     }
-    
 }
 
 .show .one {
@@ -304,7 +338,8 @@ nav {
     height: 30px;
 }
 
-#search-bar:hover, #search-bar:focus {
+#search-bar:hover,
+#search-bar:focus {
     outline: none;
     background-color: rgba(255, 255, 255);
     color: black;
@@ -314,9 +349,13 @@ nav {
     padding-left: 30px;
 }
 
+
 /* Default styles first then media queries */
 
 @media screen and (max-width: 398px) {
+    .commentt {
+        font-size: 12px;
+    }
     .headertext {
         font-size: 20px;
     }
@@ -332,6 +371,9 @@ nav {
 }
 
 @media screen and (min-width: 400px) {
+    .commentt {
+        font-size: 12px;
+    }
     .headertext {
         font-size: 20px;
     }
@@ -362,6 +404,9 @@ nav {
 }
 
 @media screen and (min-width: 600px) {
+    .commentt {
+        font-size: 18px;
+    }
     .headertext {
         font-size: 20px;
     }
